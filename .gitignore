@@ -1,0 +1,15 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+_temp/
+tmp/
+*.log
+*.mp4
+*.mov
+*.m4v
+*.webm
+*.mp3
+*.wav
+__pycache__/
+*.pyc

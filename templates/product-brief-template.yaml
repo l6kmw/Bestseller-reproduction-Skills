@@ -1,0 +1,37 @@
+product:
+  brand: ""
+  name: ""
+  model: ""
+  category: ""
+  price: ""
+  target_audience: ""
+  target_platform: "TikTok/Reels/Shorts/独立站"
+  target_duration_seconds: 30
+  tone: "真实、清晰、有转化感"
+
+selling_points:
+  - ""
+  - ""
+  - ""
+
+proof_points:
+  - claim: ""
+    visual_evidence: ""
+
+appearance:
+  color: ""
+  logo: ""
+  key_parts:
+    - ""
+
+must_show:
+  - ""
+
+must_avoid:
+  - "原视频品牌、原人物、原字幕、原素材"
+  - "未经证明的数据承诺"
+  - "绝对化用语"
+
+cta:
+  brand_line: ""
+  action: ""

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "example_showcase_prompt_only",
+    "input": "演示 DemoBrand 割草机：把机器人割草机爆款结构拆成原创 30 秒 TikTok/Reels/Shorts 生产包，先 prompt-only，保证不用平台登录也能跑通。",
+    "recommended_command": "python3 scripts/run_workflow.py --texts examples/example-viral-reference-notes.md --product templates/example-product-brief.yaml --workdir _temp/example-showcase --duration 30 --platform \"TikTok/Reels/Shorts/独立站\" --prompt-only",
+    "expect": [
+      "痛点反差",
+      "自动化替代",
+      "DEMO BRAND Logo",
+      "红色 STOP 键",
+      "素材补拍清单",
+      "QA检查表"
+    ]
+  },
+  {
+    "name": "example_tiktok_url",
+    "input": "把这个 TikTok 割草机爆款复刻成 DemoBrand 30 秒广告方案：https://www.tiktok.com/@example/video/123",
+    "recommended_command": "uv run $SKILL_DIR/scripts/run_workflow.py --urls \"https://www.tiktok.com/@example/video/123\" --product $SKILL_DIR/templates/example-product-brief.yaml --workdir _temp/example-case --duration 30 --platform \"TikTok/Reels/Shorts\"",
+    "expect": [
+      "原爆款内容拆解摘要",
+      "原创宣传脚本",
+      "短视频分镜表",
+      "视频生成提示词",
+      "DEMO BRAND - Let weekends be weekends"
+    ]
+  },
+  {
+    "name": "local_article_prompt_only",
+    "input": "用本地竞品文章生成 TikTok/Reels/Shorts 宣传方案，先 prompt-only，不调用模型。",
+    "recommended_command": "uv run $SKILL_DIR/scripts/run_workflow.py --texts /path/to/article.md --product $SKILL_DIR/templates/example-product-brief.yaml --workdir _temp/example-prompt-only --duration 30 --platform \"TikTok/Reels/Shorts\" --prompt-only",
+    "expect": [
+      "视频生成提示词",
+      "素材补拍清单",
+      "QA检查表"
+    ]
+  },
+  {
+    "name": "generic_product_brief",
+    "input": "读取一个自定义 product brief，把竞品广告拆成原创宣传脚本、分镜和补拍清单。",
+    "recommended_command": "uv run $SKILL_DIR/scripts/run_workflow.py --texts /path/to/competitor-notes.md --product /path/to/product-brief.yaml --workdir _temp/generic-remix --duration 30 --platform \"TikTok/Reels/Shorts/独立站\"",
+    "expect": [
+      "自家产品卖点映射表",
+      "素材补拍清单",
+      "合规"
+    ]
+  }
+]

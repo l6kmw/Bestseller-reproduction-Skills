@@ -1,0 +1,59 @@
+# DemoBrand 是本仓库为演示流程编造的虚构示例品牌，不对应任何真实公司或产品。
+# 换成自己的品牌：改 product.brand / appearance.logo / cta.brand_line，
+# 并同步 scripts/validate_package.py 的 BRAND_REQUIRED_TERMS。
+product:
+  brand: "DEMO BRAND"
+  name: "DEMO BRAND Robot Lawn Mower"
+  model: ""
+  category: "智能割草机 / Robot Lawn Mower"
+  price: ""
+  target_audience: "有庭院草坪、想节省周末时间的欧美家庭用户"
+  target_platform: "TikTok/Reels/Shorts/独立站"
+  target_duration_seconds: 30
+  tone: "真实户外广告感、轻科技、周末生活方式"
+
+selling_points:
+  - "自动割草，减少手动推割草机的时间"
+  - "App/扫码连接，操作简单"
+  - "自动回充，形成省心闭环"
+
+proof_points:
+  - claim: "自动割草"
+    visual_evidence: "机器从充电座出发，在草坪上自主行驶"
+  - claim: "操作简单"
+    visual_evidence: "机身二维码/App界面/路线状态特写"
+  - claim: "草坪更整洁"
+    visual_evidence: "割前草高杂乱，割后草坪整齐的对比"
+  - claim: "自动回充"
+    visual_evidence: "机器回到充电座并停靠"
+
+appearance:
+  color: "白色机身，黑灰底盘和轮胎"
+  logo: "DEMO BRAND"
+  key_parts:
+    - "红色 STOP 键"
+    - "黑色 PUSH 高度调节旋钮"
+    - "大轮胎"
+    - "充电座"
+    - "机身二维码/App标签"
+
+must_show:
+  - "白色机身和 DEMO BRAND Logo"
+  - "红色 STOP 键"
+  - "黑色 PUSH 旋钮"
+  - "大轮胎"
+  - "充电座"
+  - "二维码/App连接"
+  - "自动离座割草"
+  - "割前/割后草坪对比"
+  - "自动回充"
+
+must_avoid:
+  - "原视频品牌、原产品、原字幕、原人物、原素材"
+  - "竞品 Logo"
+  - "错误产品外观"
+  - "无法证明的夸张效果"
+
+cta:
+  brand_line: "DEMO BRAND - Let weekends be weekends."
+  action: "Learn more / Shop now"
